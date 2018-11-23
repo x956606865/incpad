@@ -6,5 +6,15 @@
   "npmClientArgs": [
     "--no-lockfile"
   ],
+  "changelog": {
+    "repo": "aj0k3r/Incpad",
+    "labels": {
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "doc": "Refine Doc",
+      "feat": "New Feature"
+    },
+    "cacheDir": ".changelog"
+  },
   "version": "independent"
 }
