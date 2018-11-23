@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "BaseTool": "^1.0.0",
+    "@incpad/base-tool": "^1.0.4",
     "fastest-validator": "^0.6.12"
   }
 }

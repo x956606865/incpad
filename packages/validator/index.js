@@ -1,15 +1,34 @@
-const validator = require('fastest-validator'),
-    {
-        schemaList,
-        customCheckerList,
-        customMessages,
-    } = require('./validator.schema');
+const validator = require('fastest-validator');
 
-let v = null;
+let v = null,
+    schemaListG = null;
 const compiledCheckerCache = {};
 //-----------------------------------------
 // do init
-function initValidator() {
+function initValidatorWithFile(schemaPath) {
+    const {
+        schemaList,
+        customCheckerList,
+        customMessages,
+    } = require(schemaPath);
+    schemaListG = schemaList;
+    if (v === null) {
+        v = new validator({
+            messages: customMessages,
+        });
+        for (const [key, func] of Object.entries(customCheckerList)) {
+            v.add(key, value => func(value, v));
+        }
+    }
+}
+
+function initValidatorWithObject(schemaObject) {
+    const {
+        schemaList,
+        customCheckerList,
+        customMessages,
+    } = require(schemaObject);
+    schemaListG = schemaList;
     if (v === null) {
         v = new validator({
             messages: customMessages,
@@ -22,8 +41,7 @@ function initValidator() {
 
 function initCheckerSchema(checkerName) {
     if (!compiledCheckerCache[checkerName]) {
-        const descScheme = schemaList[checkerName];
-        initValidator();
+        const descScheme = schemaListG[checkerName];
         compiledCheckerCache[checkerName] = v.compile(descScheme);
     }
 }
@@ -49,4 +67,6 @@ function Validator(checkerName, target) {
 
 module.exports = {
     Validator,
+    initValidatorWithFile,
+    initValidatorWithObject,
 };

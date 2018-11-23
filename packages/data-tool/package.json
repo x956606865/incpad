@@ -5,6 +5,6 @@
   "license": "MIT",
   "scripts": {},
   "dependencies": {
-    "BaseTool": "^1.0.0"
+    "@incpad/base-tool": "^1.0.4"
   }
 }

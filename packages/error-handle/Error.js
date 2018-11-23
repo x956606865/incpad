@@ -1,6 +1,7 @@
-const { CreateSymbolTool } = require('./baseTool');
-const { Validator } = require('./validator'),
+const { CreateSymbolTool } = require('@incpad/base-tool');
+const { Validator, initValidatorWithFile } = require('@incpad/validator'),
     outterError = require('./error.schema');
+initValidatorWithFile('./validator.schema.js');
 const SymbolTable = CreateSymbolTool([
     'ErrorList',
     'ErrorCodeList',
