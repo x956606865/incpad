@@ -1,11 +1,10 @@
 {
   "name": "@incpad/DataTool",
-  "version": "1.0.4",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {},
   "dependencies": {
     "BaseTool": "^1.0.2"
-  },
-  "gitHead": "327ffbc38cb16d480021130463df3b1412f11aad"
+  }
 }

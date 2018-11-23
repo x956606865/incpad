@@ -1,8 +1,7 @@
 {
   "name": "@incpad/BaseTool",
-  "version": "1.0.5",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {},
-  "gitHead": "327ffbc38cb16d480021130463df3b1412f11aad"
+  "scripts": {}
 }
