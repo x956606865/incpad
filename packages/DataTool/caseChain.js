@@ -2,7 +2,7 @@ const SymbolTable = {
     header: Symbol(),
     tail: Symbol(),
     initCaseChain: Symbol(),
-    appendCaseToChain: Symbol(),
+    appendCaseToChain: Symbol('appendCaseToChain'),
 };
 
 class CaseChain {

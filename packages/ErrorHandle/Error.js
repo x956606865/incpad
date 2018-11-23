@@ -47,7 +47,7 @@ class ErrorHandle {
             },
             {
                 code: 1,
-                msg: '',
+                msg: 'RuntimeError',
                 name: 'RuntimeError',
             },
         ];

@@ -39,7 +39,7 @@ function getChecker(checkerName) {
 //exported checker
 /**
  * check the validation of the desc.json
- * @param {String} checkerName - checker name
+ * @param {String} checkerName - checkerName
  * @param {*} target - desc object
  * @returns {*} - the result
  */
