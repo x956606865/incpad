@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "commit": "git-cz",
-    "new:package": "bash ./scripts/CreatePackage.sh"
+    "new:package": "bash ./scripts/CreatePackage.sh",
+    "publish": "bash ./scripts/publish_private.sh"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
