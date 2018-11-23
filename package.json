@@ -1,0 +1,43 @@
+{
+  "name": "incpad",
+  "private": true,
+  "scripts": {
+    "commit": "git-cz",
+    "new:package": "bash ./scripts/CreatePackage.sh"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "babel-eslint": "^10.0.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-esnext": "^4.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native": "^3.5.0",
+    "husky": "^1.2.0",
+    "lerna": "^3.4.3",
+    "lint-staged": "^8.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --config ./.prettierrc --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "aj0k3r <x3359449@qq.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "DataTool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+  },
+  "dependencies": {
+    "BaseTool": "^1.0.0"
+  }
+}
