@@ -1,4 +1,4 @@
-### Useage
+### Usage
 
 ```$xslt
     const {Validator, initValidatorWithFile} = require("@incpad/validator")
