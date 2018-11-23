@@ -1,6 +1,6 @@
 function CreateSymbolTool(keyArray) {
     if (!Array.isArray(keyArray)) {
-        throw new Error('error type ');
+        throw new Error('error type');
     }
     const result = {};
     keyArray.map(key => {
