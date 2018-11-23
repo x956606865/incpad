@@ -23,11 +23,7 @@ function initValidatorWithFile(schemaPath) {
 }
 
 function initValidatorWithObject(schemaObject) {
-    const {
-        schemaList,
-        customCheckerList,
-        customMessages,
-    } = require(schemaObject);
+    const { schemaList, customCheckerList, customMessages } = schemaObject;
     schemaListG = schemaList;
     if (v === null) {
         v = new validator({
