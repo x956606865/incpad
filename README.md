@@ -37,6 +37,8 @@ pnpm install @incpad/packageName
 * [error-handle](./packages/error-handle/README.md):提供定义式的错误处理库
 * [validator](./packages/validator/README.md):提供定义式的对象校验功能
 * [data-tool](./packages/data-tool/README.md):提供各种数据模型、算法模型，用于优化
+* [decorators](./packages/decorators/README.md):提供一系列的装饰器函数，用于加快开发速度
+* [need](./packages/need/README.md):快速依赖注入工具
 #### 参与贡献
 
 1. Fork 本项目
