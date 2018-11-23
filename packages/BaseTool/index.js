@@ -16,6 +16,9 @@ function getValueFromEnv(envKey, defaultValue = null) {
     return process.env[envKey] || defaultValue;
 }
 
+function test() {}
+
+test();
 module.exports = {
     CreateSymbolTool,
     getValueFromEnv,
