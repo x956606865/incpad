@@ -5,10 +5,6 @@ function convertPathWithinCustomRootDir(rootDir, path) {
     return nativePath.resolve(rootDir, path);
 }
 
-function convertPathWithinProjectDir(path) {
-    return convertPathWithinCustomRootDir(__dirname, path);
-}
-
 function convertPathWithinRuntimeDir(path) {
     return convertPathWithinCustomRootDir(process.cwd(), path);
 }
@@ -24,7 +20,6 @@ function checkExist(path) {
 
 module.exports = {
     convertPathWithinCustomRootDir,
-    convertPathWithinProjectDir,
     convertPathWithinRuntimeDir,
     checkExist,
     resolve: nativePath.resolve,
