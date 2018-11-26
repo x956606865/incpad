@@ -1,0 +1,23 @@
+diff a/packages/base-tool/test/index.spec.js b/packages/base-tool/test/index.spec.js	(rejected hunks)
+@@ -1,10 +1,10 @@
+-const {CreateSymbolTool}=require('../index')
+-describe("Test for CreateSymbolTool",()=>{
+-    test("it should return a symbol map",()=>{
+-        const testList=["name1","name2","name3"]
+-        const result=CreateSymbolTool(testList)
+-        testList.map(name=>{
+-            expect(typeof result[name]).toBe("symbol")
+-        })
+-    })
+-})
+\ No newline at end of file
++const { CreateSymbolTool } = require('../index');
++describe('Test for CreateSymbolTool', () => {
++    test('it should return a symbol map', () => {
++        const testList = ['name1', 'name2', 'name3'];
++        const result = CreateSymbolTool(testList);
++        testList.map(name => {
++            expect(typeof result[name]).toBe('symbol');
++        });
++    });
++});
