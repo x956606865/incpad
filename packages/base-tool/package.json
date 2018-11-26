@@ -3,6 +3,8 @@
   "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "test": "jest"
+  },
   "gitHead": "448770802153e4c7ceec7e71642a065b63ce9ae3"
 }
