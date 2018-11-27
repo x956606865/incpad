@@ -9,5 +9,6 @@
     "lodash.curry": "^4.1.1",
     "lodash.isnil": "^4.0.0",
     "lodash.isstring": "^4.0.1"
-  }
+  },
+  "gitHead": "7afe695afdebba5f9b23fc5cdad39dd14cada0a0"
 }
