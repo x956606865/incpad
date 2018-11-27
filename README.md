@@ -60,7 +60,7 @@ pnpm install @incpad/packageName
 * [data-tool](./packages/data-tool/README.md):提供各种数据模型、算法模型，用于优化
 * [decorators](./packages/decorators/README.md):提供一系列的装饰器函数，用于加快开发速度
 * [need](./packages/need/README.md):快速依赖注入工具
-
+* [react-native-components](./packages/react-native-components/README.md):react-native组件库
 #### 相关资料
 [lerna](https://github.com/lerna/lerna#getting-started)  
 [项目规范化lint](https://www.notion.so/aj0k3r/57b80f3f75b741e3a54546c20ae5e8e7)  
