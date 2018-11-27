@@ -58,7 +58,8 @@
     "console": true,
     "__dirname": true,
     "setTimeout": true,
-    "process": true
+    "process": true,
+    "navigator": true
   },
   "extends": [
     "esnext",

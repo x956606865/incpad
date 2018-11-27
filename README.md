@@ -38,7 +38,7 @@ ps:
 * 项目编写以及上传时必须经过eslint的测试
 * 项目上传时，应将文件add到git的暂存区，然后```npm run commit```进行上传，从而保证eslint以及commit message规范化
 * 需要在全局安装prettier
-
+* 在发布时需要登录私有npm仓库，账号incpad,无密码，邮箱incpad@cpm.com
 
 
 ##### 2） 安装package
@@ -61,6 +61,7 @@ pnpm install @incpad/packageName
 * [decorators](./packages/decorators/README.md):提供一系列的装饰器函数，用于加快开发速度
 * [need](./packages/need/README.md):快速依赖注入工具
 * [react-native-components](./packages/react-native-components/README.md):react-native组件库
+* [react-native-tools](./packages/react-native-tools/README.md):react-native工具函数库
 #### 相关资料
 [lerna](https://github.com/lerna/lerna#getting-started)  
 [项目规范化lint](https://www.notion.so/aj0k3r/57b80f3f75b741e3a54546c20ae5e8e7)  

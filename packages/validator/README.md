@@ -40,4 +40,26 @@ initValidatorWithObject(object);
 ```$xslt
 Validator("testSchema", targetObject)
 ```
+
+同时，该库还导出了便捷函数checkFuncParam   
+```$xslt
+const {initValidatorWithObject, Validator, checkFuncParam} = require("../index");
+const schema = {
+    schemaList: {
+        getGeoParamCheck: {
+            cbSucc: "function",
+            cbErr: "function"
+        },
+    },
+    customCheckerList: {},
+    customMessages: {},
+};
+initValidatorWithObject(schema);
+function getGeo(cbSucc,cbErr){
+    checkFuncParam("getGeoParamCheck", {cbSucc,cbErr});
+}
+```
+如果校验失败，则会直接抛出参数格式不正确的错误
+
+
 由于该库只是fastest-validator的再次封装，所以schema、返回值等等都和原库一致

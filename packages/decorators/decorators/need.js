@@ -1,5 +1,5 @@
 // cSpell:ignore isstring
-const needUtil = require('@incpad/need').need;
+const needUtil = require('../../need/index').need;
 const isString = needUtil('lodash.isstring');
 const set = needUtil('lodash.set');
 /**
