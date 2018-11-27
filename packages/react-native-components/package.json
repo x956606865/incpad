@@ -6,5 +6,6 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-native": "^0.57.6"
-  }
+  },
+  "gitHead": "7afe695afdebba5f9b23fc5cdad39dd14cada0a0"
 }

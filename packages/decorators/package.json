@@ -11,5 +11,6 @@
     "lodash.isstring": "^4.0.1",
     "lodash.set": "^4.3.2",
     "react-native": "^0.57.5"
-  }
+  },
+  "gitHead": "7afe695afdebba5f9b23fc5cdad39dd14cada0a0"
 }
