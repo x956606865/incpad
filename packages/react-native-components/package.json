@@ -1,0 +1,10 @@
+{
+  "name": "@incpad/react-native-components",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-native": "^0.57.6"
+  }
+}
