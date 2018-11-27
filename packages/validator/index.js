@@ -1,5 +1,4 @@
 const validator = require('fastest-validator');
-
 let v = null,
     schemaListG = null;
 const compiledCheckerCache = {};
@@ -61,8 +60,16 @@ function Validator(checkerName, target) {
     return getChecker(checkerName)(target);
 }
 
+function checkFuncParam(schemaName, paramObject) {
+    const result = Validator(schemaName, paramObject);
+    if (result !== true) {
+        throw new Error('function params type not valid');
+    }
+}
+
 module.exports = {
     Validator,
     initValidatorWithFile,
     initValidatorWithObject,
+    checkFuncParam,
 };

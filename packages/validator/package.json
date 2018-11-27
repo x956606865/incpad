@@ -3,6 +3,9 @@
   "version": "0.0.9",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "@incpad/base-tool": "^1.0.8",
     "fastest-validator": "^0.6.12"
