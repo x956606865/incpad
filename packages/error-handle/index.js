@@ -1,9 +1,7 @@
 const { CreateSymbolTool } = require('@incpad/base-tool');
-const { convertPathWithinCustomRootDir } = require('@incpad/base-tool/path');
-const { Validator, initValidatorWithFile } = require('@incpad/validator');
-initValidatorWithFile(
-    convertPathWithinCustomRootDir(__dirname, './validator.schema.js')
-);
+const { Validator, initValidatorWithObject } = require('@incpad/validator');
+const schema = require('./validator.schema');
+initValidatorWithObject(schema);
 const SymbolTable = CreateSymbolTool([
     'ErrorList',
     'ErrorCodeList',
@@ -39,6 +37,7 @@ class ErrorHandle {
     initCustomErrorWithObject(object) {
         this[SymbolTable.initErrorFromArray](object);
     }
+
     [SymbolTable.initInnerError]() {
         const arr = [
             {
