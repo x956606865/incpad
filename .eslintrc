@@ -59,7 +59,8 @@
     "__dirname": true,
     "setTimeout": true,
     "process": true,
-    "navigator": true
+    "navigator": true,
+    "window": true
   },
   "extends": [
     "esnext",
