@@ -22,5 +22,4 @@ module.exports = {
     convertPathWithinCustomRootDir,
     convertPathWithinRuntimeDir,
     checkExist,
-    resolve: nativePath.resolve,
 };

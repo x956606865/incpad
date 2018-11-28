@@ -1,4 +1,4 @@
-const path = require('../path');
+const path = require('../index');
 const nativePath = require('path');
 describe('test path module', () => {
     describe('test convertPathWithinCustomRootDir', () => {
