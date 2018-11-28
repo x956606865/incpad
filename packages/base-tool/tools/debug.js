@@ -1,3 +1,4 @@
+adapterToRN();
 const _debug = require('debug');
 let OPTIONS = {
     RUN_ONLY_DEBUG: true,
@@ -5,6 +6,17 @@ let OPTIONS = {
 const customDebbuger = {};
 _debug.enable('*');
 addNewDebugger('debugger');
+
+//rn has window object, but haven't localStorage prop
+function adapterToRN() {
+    if (typeof window !== 'undefined' && !window.localStorage) {
+        process.type = 'renderer';
+        window.localStorage = {
+            debug: '*',
+            getItem: () => '*',
+        };
+    }
+}
 
 function addNewDebugger(name) {
     if (typeof name !== 'string') {
