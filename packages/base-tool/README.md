@@ -33,6 +33,16 @@
               const {getValueFromEnv}=require("@incpad/base-tool")
               const PATH=getValueFromEnv("PATH","") //获取环境变量PATH，如果没有就赋予空字符串
         ```
+        
+    - getRuntimePlatform
+        > const {getRuntimePlatform}=require("@incpad/base-tool")
+        
+        返回当前运行的环境，目前可识别的为Node、Jest、browser、ReactNative（结果不保证一定正确）
+        
+    - constant
+        > const {constant}=require("@incpad/base-tool")
+        
+        返回一个对象，包含@incpad项目中所有用到的常量
 * path相关  
     - convertPathWithinCustomRootDir
         > const {convertPathWithinCustomRootDir}=require("@incpad/base-tool") 
@@ -47,12 +57,12 @@
 * debug相关
     ps:debug相关函数全是对于debug库的一个二次封装
     - tap
-        > const {tap}=require("@incpad/base-tool") 
+        > const {tap}=require("@incpad/base-tool/tools/debug") 
         
         用法等同于console.log，但是会原样返回输入的参数，所以可以无痛的插入代码链中，且默认只在dev模式输出内容
         
         ```ecmascript 6
-            const {tap}=require("@incpad/base-tool") 
+            const {tap}=require("@incpad/base-tool/tools/debug") 
             function a(c,d){      
                   //xxxx
             }
@@ -61,7 +71,7 @@
         ```
         ps:如果给tap传入多个参数，返回值会合并为数组，需要使用展开运算符展开
     - updateOptions
-        > const {updateOptions}=require("@incpad/base-tool")
+        > const {updateOptions}=require("@incpad/base-tool/tools/debug")
         
         用于更新debug的一些配置，比如关闭debug相关函数只在dev模式输出的设置:
         ```ecmascript 6 
@@ -71,12 +81,12 @@
             })
         ```
     - addNewDebugger & getCustomDebugger
-        > const {addNewDebugger,getCustomDebugger}=require("@incpad/base-tool")
+        > const {addNewDebugger,getCustomDebugger}=require("@incpad/base-tool/tools/debug")
         
         对debug的一个封装，新建一个debug对象以及获取一个debug对象
         
         ```ecmascript 6
-              const {addNewDebugger,getCustomDebugger}=require("@incpad/base-tool")
+              const {addNewDebugger,getCustomDebugger}=require("@incpad/base-tool/tools/debug")
               addNewDebugger("test")
               const testDebugger-getCustomDebugger("test")
               testDebugger("some thing to output")
