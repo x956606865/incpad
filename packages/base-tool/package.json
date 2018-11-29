@@ -1,10 +1,16 @@
 {
   "name": "@incpad/base-tool",
-  "version": "1.0.9",
+  "version": "1.0.12",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "jest"
   },
-  "gitHead": "7afe695afdebba5f9b23fc5cdad39dd14cada0a0"
+  "config": {
+    "test": "asd"
+  },
+  "gitHead": "7afe695afdebba5f9b23fc5cdad39dd14cada0a0",
+  "dependencies": {
+    "debug": "^4.1.0"
+  }
 }

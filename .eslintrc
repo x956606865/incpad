@@ -32,7 +32,7 @@
       2,
       "global"
     ],
-    "valid-jsdoc": 2,
+    "valid-jsdoc": 0,
     "no-empty-function": 0,
     "no-console": 0,
     "default-case": 2,
@@ -59,7 +59,8 @@
     "__dirname": true,
     "setTimeout": true,
     "process": true,
-    "navigator": true
+    "navigator": true,
+    "window": true
   },
   "extends": [
     "esnext",

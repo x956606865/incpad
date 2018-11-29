@@ -1,0 +1,9 @@
+{
+  "name": "@incpad/time-tool",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  }
+}
