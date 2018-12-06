@@ -1,6 +1,6 @@
 const validator = require('fastest-validator');
 let v = null,
-    schemaListG = null;
+    schemaListG = {};
 const compiledCheckerCache = {};
 //-----------------------------------------
 // do init
@@ -10,7 +10,7 @@ function initValidatorWithFile(schemaPath) {
         customCheckerList,
         customMessages,
     } = require(schemaPath);
-    schemaListG = schemaList;
+    schemaListG = Object.assign(schemaListG, schemaList);
     if (v === null) {
         v = new validator({
             messages: customMessages,
@@ -23,7 +23,7 @@ function initValidatorWithFile(schemaPath) {
 
 function initValidatorWithObject(schemaObject) {
     const { schemaList, customCheckerList, customMessages } = schemaObject;
-    schemaListG = schemaList;
+    schemaListG = Object.assign(schemaListG, schemaList);
     if (v === null) {
         v = new validator({
             messages: customMessages,
