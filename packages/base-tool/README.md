@@ -106,3 +106,37 @@
     // exampleTimeTest asdsadd +0ms
     // exampleTimeTest asdsadd +708ms
     ```
+    
+* wrapper相关:
+    - doWrap 包裹传入的函数，返回包装后的函数，为其添加异步的AOP钩子
+        ```ecmascript 6
+          const { doWrap } = require('@incpad/base-tool/tools/wrapper');
+          function func(){
+              console.log("run")
+          }
+          const newFunc=doWrap(func, {
+                  before: console.log.bind(null,"before"),
+                  after: console.log.bind(null,"after"),
+                  context,
+              })
+          newFunc("runData")
+        ```
+        
+        被加入的before和after可以是Promise异步，最后的返回值是func的返回值,三个函数都只会接收到原始参数，即例子中的"runData"
+      
+    - doWrapAndPipeData 包裹传入的函数，返回包装后的函数，为其添加异步的AOP钩子
+    
+            ```ecmascript 6
+              const { doWrapAndPipeData } = require('@incpad/base-tool/tools/wrapper');
+              function func(){
+                  console.log("run")
+              }
+              const newFunc=doWrapAndPipeData(func, {
+                      before: console.log.bind(null,"before"),
+                      after: console.log.bind(null,"after"),
+                      context,
+                  })
+              newFunc("runData")
+            ```
+            
+            类似doWrap，但是三个函数接受到的参数都是上一个函数的返回值，最后的返回值是after的返回值

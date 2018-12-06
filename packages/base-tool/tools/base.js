@@ -1,4 +1,4 @@
-const constants = require('./constant');
+const constants = require('./constant').getConstant('BaseToolConstant');
 
 function CreateSymbolTool(keyArray) {
     if (!Array.isArray(keyArray)) {
