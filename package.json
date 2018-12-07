@@ -75,5 +75,16 @@
       "/test/__data__/",
       "<rootDir>/build/"
     ]
+  },
+  "changelog": {
+    "repo": "aj0k3r/Incpad",
+    "labels": {
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "doc": "Refine Doc",
+      "feat": "New Feature",
+      "build": "Build configure change"
+    },
+    "cacheDir": ".changelog"
   }
 }
