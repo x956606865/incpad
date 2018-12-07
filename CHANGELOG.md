@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://gitee.com/brokenMoon/Incpad/compare/v1.1.2...v1.2.0) (2018-12-07)
+
+
+### Features
+
+* **script:** finish the shell CreatePackage.sh ([33b2ae8](https://gitee.com/brokenMoon/Incpad/commits/33b2ae8))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://gitee.com/brokenMoon/Incpad/compare/v1.1.1...v1.1.2) (2018-12-07)
 
