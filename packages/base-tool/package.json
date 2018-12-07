@@ -11,6 +11,7 @@
   },
   "gitHead": "7afe695afdebba5f9b23fc5cdad39dd14cada0a0",
   "dependencies": {
-    "debug": "^4.1.0"
+    "debug": "^4.1.0",
+    "lodash.get": "^4.4.2"
   }
 }

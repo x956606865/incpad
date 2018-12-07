@@ -5,6 +5,7 @@
     "commit": "git-cz",
     "new:package": "bash ./scripts/CreatePackage.sh",
     "publish": "bash ./scripts/publish_private.sh",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "test": "jest"
   },
   "devDependencies": {

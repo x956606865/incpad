@@ -1,4 +1,5 @@
 const constants = require('./constant').getConstant('BaseToolConstant');
+const get = require('lodash.get');
 
 function CreateSymbolTool(keyArray) {
     if (!Array.isArray(keyArray)) {
@@ -55,7 +56,11 @@ function _isBrowserEnv() {
 
 function _isReactNativeLikeEnv() {
     //RN has window object too,but haven't localStorage prop
-    if (typeof window !== 'undefined' && !window.localStorage) {
+    if (typeof global === 'undefined') {
+        return false;
+    }
+    const r = get(global, 'navigator.product');
+    if (r === constants.RN) {
         return true;
     }
     return false;
@@ -63,7 +68,11 @@ function _isReactNativeLikeEnv() {
 
 function _isNodeEnv() {
     //node has global bug has not window
-    if (typeof global !== 'undefined' && typeof window === 'undefined') {
+    if (typeof process === 'undefined') {
+        return false;
+    }
+    const r = get(process, 'release.name');
+    if (r === 'node') {
         return true;
     }
     return false;
