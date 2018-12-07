@@ -6,3 +6,5 @@ lerna publish --registry=http://ec2-18-221-5-8.us-east-2.compute.amazonaws.com:7
 brach_name=`git symbolic-ref --short -q HEAD`
 #auto upload
 npm run release
+git push --follow-tags origin ${brach_name}
+pnpm publish
