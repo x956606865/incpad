@@ -12,4 +12,4 @@ npm run release
 #推送新的tag以及changelog到git
 git push --follow-tags origin ${brach_name}
 #发布总模块到仓库
-npm publish --registry=http://ec2-18-221-5-8.us-east-2.compute.amazonaws.com:7001
+#npm publish --registry=http://ec2-18-221-5-8.us-east-2.compute.amazonaws.com:7001
