@@ -40,7 +40,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "author": "aj0k3r <x3359449@qq.com>",
   "license": "MIT",
