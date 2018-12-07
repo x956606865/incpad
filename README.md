@@ -25,14 +25,13 @@ lerna bootstrap
 ##### 1) 开发新package
 1. 假设新项目名为example
 2. 新建并切换至分支Feat_package_example
-3. 在packages目录下新建目录example
-4. 使用```yarn init -y```快速初始化项目
-5. 修改packages.json中项目名为@incpad/example
-6. 使用```lerna add xxx --scope=@incpad/example```为项目安装相关的依赖
-7. 进行代码开发
-8. 新建test目录，为项目撰写测试用例
-9. 运行```npm run publish```将项目上传到私有npm中
-10. 提交PR合并项目
+3. 使用```npm run new:package example```新建一个包
+4. 该命令会自动安装base-tool,validator,error-handle三个依赖，并生成配置文件
+5. 使用```lerna add xxx --scope=@incpad/example```为项目安装相关的依赖
+6. 进行代码开发
+7. 新建test目录，为项目撰写测试用例
+8. 运行```npm run publish```将项目上传到私有npm中
+9. 提交PR合并项目
 
 ps: 
 * 项目编写以及上传时必须经过eslint的测试

@@ -88,5 +88,6 @@
       "build": "Build configure change"
     },
     "cacheDir": ".changelog"
-  }
+  },
+  "repository": "git@gitee.com:brokenMoon/Incpad.git"
 }
