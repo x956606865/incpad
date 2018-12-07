@@ -1,4 +1,11 @@
 prefix="@incpad"
+Should_Run_With="npm"
+# must execute by npm script
+if [ "$Run_With" != "$Should_Run_With" ]
+then
+    echo "Please run with 'npm run new:package packageName'"
+    exit 0
+fi
 rootDir=`pwd`
 package_name="${prefix}/$1"
 base_dep=(
@@ -47,12 +54,6 @@ do
     lerna add ${prefix}/${dep} --scope="$package_name" # optional
     checkErr "add dep failed"
 done
-#lerna add ${prefix}/base-tool --scope="$package_name" # optional
-#
-#lerna add ${prefix}/validator --scope="$package_name" # optional
-#checkErr "add dep failed"
-#lerna add ${prefix}/error-handle --scope="$package_name" # optional
-#checkErr "add dep failed"
 
 echo "create package ${prefix}/$1 success!"
 
