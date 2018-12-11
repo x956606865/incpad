@@ -60,7 +60,8 @@
     "setTimeout": true,
     "process": true,
     "navigator": true,
-    "window": true
+    "window": true,
+    "document": true
   },
   "extends": [
     "esnext",

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://gitee.com/brokenMoon/Incpad/compare/v1.3.0...v1.4.0) (2018-12-11)
+
+
+### Features
+
+* **base-tool:** add new funtion to base-tool ([64b3f72](https://gitee.com/brokenMoon/Incpad/commits/64b3f72))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://gitee.com/brokenMoon/Incpad/compare/v1.2.1...v1.3.0) (2018-12-07)
 
