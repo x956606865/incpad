@@ -47,11 +47,7 @@ function _isJestEnv() {
 }
 
 function _isBrowserEnv() {
-    //RN has window object too,but haven't localStorage prop
-    if (typeof window !== 'undefined' && window.localStorage) {
-        return true;
-    }
-    return false;
+    return ![typeof window, typeof document].includes('undefined');
 }
 
 function _isReactNativeLikeEnv() {
@@ -78,8 +74,22 @@ function _isNodeEnv() {
     return false;
 }
 
+function pipeAsyncFuncs(...fns) {
+    return arg =>
+        fns.reduce(
+            (prev, cur) =>
+                prev
+                    .then(data => Promise.resolve(cur(data)))
+                    .catch(e => {
+                        throw e;
+                    }),
+            Promise.resolve(arg)
+        );
+}
+
 module.exports = {
     CreateSymbolTool,
     getValueFromEnv,
     getRuntimePlatform,
+    pipeAsyncFuncs,
 };

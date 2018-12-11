@@ -43,6 +43,51 @@
         > const {constant}=require("@incpad/base-tool")
         
         返回一个对象，包含@incpad项目中所有用到的常量
+        
+    - pipeAsyncFuncs
+        > const {pipeAsyncFuncs}=require("@incpad/base-tool")
+        
+        可以传入多个异步函数，每个函数必须返回一个promise，依次执行每个函数，每个函数的参数为上一个函数的返回值
+        如果中途某个函数抛出错误，则后续函数都不会被执行
+        
+        ```ecmascript 6
+          const test = pipeAsyncFuncs(
+              console.log.bind(null, 'before'),
+              () => {
+                  return new Promise(resolve => setTimeout(() => {
+                      console.log('timer');
+                      resolve('timer');
+                  }, 1000));
+              },
+              console.log.bind(null, 'now'),
+              console.log.bind(null, 'after'),
+              )
+          ;
+          test(1);
+          //output:
+          //before 1
+          //timer
+          //now timer
+          //after undefined
+        ```
+
+* browser相关
+    - copyToClipboard
+        > const {copyToClipboard}=require("@incpad/base-tool/tools/browser")
+        > copyToClipboard("test")
+        
+        将传入的文本拷贝到用户剪贴板，限浏览器环境
+        
+    - scrollToTop
+        > const {scrollToTop}=require("@incpad/base-tool/tools/browser")
+        
+        滚动到页面顶端
+        
+    - parseCookie
+        > const {parseCookie}=require("@incpad/base-tool/tools/browser")
+        > parseCookie(document.cookie)
+        
+        解析cookie
 * path相关  
     - convertPathWithinCustomRootDir
         > const {convertPathWithinCustomRootDir}=require("@incpad/base-tool") 
