@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://gitee.com/brokenMoon/Incpad/compare/v1.6.0...v1.7.0) (2018-12-24)
+
+
+### Features
+
+* **storybook:** add new addon to storybook ([b563a65](https://gitee.com/brokenMoon/Incpad/commits/b563a65))
+
+
+
 <a name="1.6.0"></a>
 # 1.6.0 (2018-12-24)
 
