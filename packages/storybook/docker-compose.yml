@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  storybooks:
+    image: kadajett/node-storybook
+    working_dir: /root/storybook
+    container_name: "storybook"
+    volumes:
+    - $PWD:/root/storybook
+    ports:
+    - "8000:80"
+    command: npx start-storybook -p 80 -h 0.0.0.0

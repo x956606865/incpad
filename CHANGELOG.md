@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://gitee.com/brokenMoon/Incpad/compare/v1.4.0...v1.5.0) (2018-12-24)
+
+
+### Features
+
+* **base-tool:** add new func to base-tool ([a77813b](https://gitee.com/brokenMoon/Incpad/commits/a77813b))
+* **storybook:** init storybook ([fba1345](https://gitee.com/brokenMoon/Incpad/commits/fba1345))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://gitee.com/brokenMoon/Incpad/compare/v1.3.0...v1.4.0) (2018-12-11)
 

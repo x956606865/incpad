@@ -18,8 +18,18 @@ function checkExist(path) {
     }
 }
 
+function readFileSync(path, options) {
+    return fs.readFileSync(path, options);
+}
+
+function readFileWithinRuntimeDirSync(path, options) {
+    return fs.readFileSync(convertPathWithinRuntimeDir(path), options);
+}
+
 module.exports = {
     convertPathWithinCustomRootDir,
     convertPathWithinRuntimeDir,
     checkExist,
+    readFileSync,
+    readFileWithinRuntimeDirSync,
 };
