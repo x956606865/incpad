@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { Button } from 'antd';
 import 'antd/dist/antd.css';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 const style = {
     container: {
@@ -17,6 +18,7 @@ const style = {
     },
 };
 storiesOf('Button')
+    .addDecorator(withKnobs)
     .add('type', () => (
         <div style={style.container}>
             <Button type="primary" onClick={action('clicked')}>
@@ -33,26 +35,38 @@ storiesOf('Button')
     ))
     .add('loading', () => (
         <div style={style.container}>
-            <Button type="primary" loading>
+            <Button type="primary" loading={boolean('loading', true)}>
                 Loading
             </Button>
-            <Button type="primary" size="small" loading>
+            <Button
+                type="primary"
+                size="small"
+                loading={boolean('loading', true)}
+            >
                 Loading
             </Button>
             <br />
-            <Button type="primary" loading={true} onClick={action('clicked')}>
+            <Button
+                type="primary"
+                loading={boolean('loading', true)}
+                onClick={action('clicked')}
+            >
                 Click me!
             </Button>
             <Button
                 type="primary"
                 icon="poweroff"
-                loading={true}
+                loading={boolean('loading', true)}
                 onClick={action('clicked')}
             >
                 Click me!
             </Button>
             <br />
-            <Button shape="circle" loading />
-            <Button type="primary" shape="circle" loading />
+            <Button shape="circle" loading={boolean('loading', true)} />
+            <Button
+                type="primary"
+                shape="circle"
+                loading={boolean('loading', true)}
+            />
         </div>
     ));
