@@ -4,6 +4,9 @@ before_install:
 - chmod 600 ~/.ssh/id_rsa
 script:
   - ssh root@116.62.198.23 "cd /root/incpad/packages/storybook/scripts && ./build.sh"
+addons:
+  ssh_known_hosts:
+  - 116.62.198.23
 branches:
   only:
   - Feat_for_storybook
