@@ -22,7 +22,6 @@ module.exports = (baseConfig, env, defaultConfig) => {
     // Extend defaultConfig as you need.
 
     // For example, add typescript loader:
-    console.log(defaultConfig);
     defaultConfig.module.rules.push({
         test: /\.stories\.js?$/,
         loaders: [require.resolve('@storybook/addon-storysource/loader')],
