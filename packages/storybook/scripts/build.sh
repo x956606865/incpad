@@ -22,6 +22,8 @@ check_err "git pull failed"
 # re-install
 npm i
 check_err "npm install failed"
+# remove old dist
+rm -rf $project_path/storybook-static
 # build
 npm run build-storybook
 check_err "build project failed"

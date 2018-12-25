@@ -3,8 +3,7 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 script:
-  - ifconfig
-  - ./packages/storybook/scripts/build.sh
+  - ssh root@116.62.198.23 "cd /root/incpad/packages/storybook/scripts && ./build.sh"
 branches:
   only:
   - Feat_for_storybook
