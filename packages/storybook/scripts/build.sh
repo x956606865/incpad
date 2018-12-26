@@ -20,8 +20,11 @@ docker rm nginx
 git pull
 check_err "git pull failed"
 # re-install
+rm -rf node_modules
 npm i
 check_err "npm install failed"
+# remove old dist
+rm -rf $project_path/storybook-static
 # build
 npm run build-storybook
 check_err "build project failed"

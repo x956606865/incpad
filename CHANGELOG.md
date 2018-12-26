@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.10.0"></a>
+# [1.10.0](https://gitee.com/brokenMoon/Incpad/compare/v1.9.0...v1.10.0) (2018-12-26)
+
+
+### Features
+
+* **storybook:** add support for RN by react-native-web ([b16b254](https://gitee.com/brokenMoon/Incpad/commits/b16b254))
+
+
+
+<a name="1.9.0"></a>
+# [1.9.0](https://gitee.com/brokenMoon/Incpad/compare/v1.8.3...v1.9.0) (2018-12-25)
+
+
+### Features
+
+* **storybook:** add new story(Button with icon) to storybook ([797f223](https://gitee.com/brokenMoon/Incpad/commits/797f223))
+
+
+
+<a name="1.8.3"></a>
+## [1.8.3](https://gitee.com/brokenMoon/Incpad/compare/v1.8.2...v1.8.3) (2018-12-25)
+
+
+
+<a name="1.8.2"></a>
+## [1.8.2](https://gitee.com/brokenMoon/Incpad/compare/v1.8.1...v1.8.2) (2018-12-25)
+
+
+
 <a name="1.8.1"></a>
 ## [1.8.1](https://gitee.com/brokenMoon/Incpad/compare/v1.8.0...v1.8.1) (2018-12-25)
 

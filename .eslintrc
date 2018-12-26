@@ -51,7 +51,8 @@
     "no-extend-native": 1,
     "no-fallthrough": 1,
     "no-loop-func": "warn",
-    "array-callback-return": "warn"
+    "array-callback-return": "warn",
+    "import/no-unresolved": "warn"
   },
   "globals": {
     "__DEV__": true,
