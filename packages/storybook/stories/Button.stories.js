@@ -6,6 +6,7 @@ import { Button } from 'antd';
 import 'antd/dist/antd.css';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
+const prefix = 'React|';
 const style = {
     container: {
         width: '300px',
@@ -17,7 +18,7 @@ const style = {
         flexWrap: 'wrap',
     },
 };
-storiesOf('Button')
+storiesOf(`${prefix}Button`)
     .addDecorator(withKnobs)
     .add('type', () => (
         <div style={style.container}>
