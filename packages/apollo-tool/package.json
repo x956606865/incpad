@@ -1,12 +1,12 @@
 {
   "name": "@incpad/apollo-tool",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@incpad/base-tool": "^1.0.19",
-    "@incpad/error-handle": "^1.0.18",
-    "@incpad/validator": "^0.0.20",
+    "@incpad/base-tool": "^1.0.20",
+    "@incpad/error-handle": "^1.0.19",
+    "@incpad/validator": "^0.0.21",
     "axios": "^0.18.0",
     "qs": "^6.6.0"
   }
