@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.10.1"></a>
+## [1.10.1](https://github.com/x956606865/incpad/compare/v1.10.0...v1.10.1) (2018-12-26)
+
+
+### Bug Fixes
+
+* **changelog:** fix the wrong url in changelog ([cbd6405](https://github.com/x956606865/incpad/commit/cbd6405))
+
+
+
 <a name="1.10.0"></a>
 # [1.10.0](https://gitee.com/brokenMoon/Incpad/compare/v1.9.0...v1.10.0) (2018-12-26)
 
