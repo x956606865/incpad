@@ -1,11 +1,11 @@
 {
   "name": "@incpad/error-handle",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@incpad/base-tool": "^1.0.18",
-    "@incpad/validator": "^0.0.19"
+    "@incpad/base-tool": "^1.0.19",
+    "@incpad/validator": "^0.0.20"
   },
   "gitHead": "7afe695afdebba5f9b23fc5cdad39dd14cada0a0"
 }

@@ -6,6 +6,7 @@ import { Button } from 'antd';
 import 'antd/dist/antd.css';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
+const prefix = 'React|';
 const style = {
     container: {
         width: '300px',
@@ -17,7 +18,7 @@ const style = {
         flexWrap: 'wrap',
     },
 };
-storiesOf('Button')
+storiesOf(`${prefix}Button`)
     .addDecorator(withKnobs)
     .add('type', () => (
         <div style={style.container}>
@@ -68,5 +69,22 @@ storiesOf('Button')
                 shape="circle"
                 loading={boolean('loading', true)}
             />
+        </div>
+    ))
+    .add('withIcon', () => (
+        <div style={style.container}>
+            <Button type="primary" shape="circle" icon="search" />
+            <Button type="primary" icon="search">
+                Search
+            </Button>
+            <Button shape="circle" icon="search" />
+            <Button icon="search">Search</Button>
+            <br />
+            <Button shape="circle" icon="search" />
+            <Button icon="search">Search</Button>
+            <Button type="dashed" shape="circle" icon="search" />
+            <Button type="dashed" icon="search">
+                Search
+            </Button>
         </div>
     ));
