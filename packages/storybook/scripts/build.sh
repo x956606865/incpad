@@ -20,6 +20,7 @@ docker rm nginx
 git pull
 check_err "git pull failed"
 # re-install
+rm -rf node_modules
 npm i
 check_err "npm install failed"
 # remove old dist
