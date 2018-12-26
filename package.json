@@ -79,7 +79,7 @@
     ]
   },
   "changelog": {
-    "repo": "aj0k3r/Incpad",
+    "repo": "x956606865/incpad",
     "labels": {
       "enhancement": ":rocket: Enhancement",
       "bug": ":bug: Bug Fix",
@@ -89,5 +89,5 @@
     },
     "cacheDir": ".changelog"
   },
-  "repository": "git@gitee.com:brokenMoon/Incpad.git"
+  "repository": "git@github.com:x956606865/incpad.git"
 }
