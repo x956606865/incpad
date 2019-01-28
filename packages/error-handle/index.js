@@ -1,4 +1,4 @@
-const { CreateSymbolTool } = require('@incpad/base-tool');
+const { CreateSymbolTool } = require('@incpad/base-tool/tools/base');
 const { Validator, initValidatorWithObject } = require('@incpad/validator');
 const schema = require('./validator.schema');
 initValidatorWithObject(schema);
