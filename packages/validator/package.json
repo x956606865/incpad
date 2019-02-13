@@ -1,13 +1,13 @@
 {
   "name": "@incpad/validator",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "jest"
   },
   "dependencies": {
-    "@incpad/base-tool": "^1.0.21",
+    "@incpad/base-tool": "^1.0.22",
     "fastest-validator": "^0.6.12"
   },
   "gitHead": "f81d6b170f4e3b0d71e934b7d2ad4ef3c7c001dc"
