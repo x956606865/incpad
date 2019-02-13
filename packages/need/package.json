@@ -1,11 +1,11 @@
 {
   "name": "@incpad/need",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@incpad/error-handle": "^1.0.24",
-    "@incpad/validator": "^0.0.25",
+    "@incpad/error-handle": "^1.0.25",
+    "@incpad/validator": "^0.0.26",
     "lodash.curry": "^4.1.1",
     "lodash.isnil": "^4.0.0",
     "lodash.isstring": "^4.0.1"
