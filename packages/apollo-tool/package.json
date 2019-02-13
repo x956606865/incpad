@@ -9,5 +9,6 @@
     "@incpad/validator": "^0.0.22",
     "axios": "^0.18.0",
     "qs": "^6.6.0"
-  }
+  },
+  "gitHead": "f81d6b170f4e3b0d71e934b7d2ad4ef3c7c001dc"
 }

@@ -17,5 +17,8 @@
     },
     "cacheDir": ".changelog"
   },
-  "version": "independent"
+  "version": "independent",
+  "publishConfig": {
+    "access": "public"
+  }
 }

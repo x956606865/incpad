@@ -14,10 +14,10 @@ brach_name=`git symbolic-ref --short -q HEAD`
 git push origin ${brach_name}
 checkErr "首次推送失败"
 #强制登录
-npm login  --registry http://registry.npmjs.org
+npm login  --registry https://registry.npmjs.org
 checkErr "登录npm失败"
 #发布模块到仓库
-lerna publish  --registry http://registry.npmjs.org
+lerna publish  --registry https://registry.npmjs.org
 checkErr "lerna发布失败"
 #auto upload
 npm run release
