@@ -89,5 +89,8 @@
     },
     "cacheDir": ".changelog"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "git@github.com:x956606865/incpad.git"
 }
