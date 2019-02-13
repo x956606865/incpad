@@ -1,4 +1,4 @@
-
+#/bin/zsh
 checkErr(){
 if [ "$?" = "0" ]; then
    echo "success"
