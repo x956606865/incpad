@@ -23,6 +23,9 @@ function copyToClipboard(str) {
 }
 
 function scrollToTop() {
+    if (typeof document === 'undefined') {
+        return false;
+    }
     const c = document.documentElement.scrollTop || document.body.scrollTop;
     if (c > 0) {
         window.requestAnimationFrame(scrollToTop);
