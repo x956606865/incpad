@@ -1,11 +1,11 @@
 {
   "name": "@incpad/data-tool",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "main": "index.js",
   "license": "MIT",
   "scripts": {},
   "dependencies": {
-    "@incpad/base-tool": "^1.0.23"
+    "@incpad/base-tool": "^1.0.24"
   },
   "gitHead": "89c31e67a4e638c5e6fafff1f5b0079276d4153a"
 }
