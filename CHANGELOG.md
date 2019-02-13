@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/x956606865/incpad/compare/v1.10.4...v1.11.0) (2019-02-13)
+
+
+### Bug Fixes
+
+* **base-tool:** update browser tool ([cb2d63a](https://github.com/x956606865/incpad/commit/cb2d63a))
+
+
+### Features
+
+* **script:** add script to push code to public ([cb4d388](https://github.com/x956606865/incpad/commit/cb4d388))
+
+
+
 <a name="1.10.4"></a>
 ## [1.10.4](https://github.com/x956606865/incpad/compare/v1.10.3...v1.10.4) (2019-02-13)
 
