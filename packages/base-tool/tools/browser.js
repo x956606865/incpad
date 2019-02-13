@@ -1,4 +1,7 @@
 function copyToClipboard(str) {
+    if (typeof document === 'undefined') {
+        return false;
+    }
     const el = document.createElement('textarea');
     el.value = str;
     el.setAttribute('readonly', '');
@@ -16,6 +19,7 @@ function copyToClipboard(str) {
         document.getSelection().removeAllRanges();
         document.getSelection().addRange(selected);
     }
+    return true;
 }
 
 function scrollToTop() {
