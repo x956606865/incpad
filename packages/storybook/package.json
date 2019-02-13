@@ -28,6 +28,9 @@
     "paths.macro": "^2.0.2",
     "storybook-addon-react-live-edit": "^2.0.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "storybook": "docker-compose up -d",
     "stop": "docker-compose rm -f -s",

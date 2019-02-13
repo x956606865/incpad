@@ -12,5 +12,8 @@
     "lodash.set": "^4.3.2",
     "react-native": "^0.57.5"
   },
-  "gitHead": "89c31e67a4e638c5e6fafff1f5b0079276d4153a"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "44ef2ef8073c853580887b791db6d2008c7ad824"
 }

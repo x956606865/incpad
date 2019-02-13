@@ -5,5 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "date-fns": "^1.29.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
