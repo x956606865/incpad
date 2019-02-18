@@ -10,7 +10,11 @@ function CreateSymbolTool(keyArray) {
         if (typeof key !== 'string') {
             throw new Error('error type');
         }
-        result[key] = Symbol(key);
+        if (typeof Symbol === 'undefined') {
+            result[key] = `_${key}`;
+        } else {
+            result[key] = Symbol(key);
+        }
     });
     return result;
 }

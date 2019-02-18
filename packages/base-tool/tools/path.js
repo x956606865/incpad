@@ -1,5 +1,11 @@
-const nativePath = require('path'),
+let nativePath = null,
+    fs = null;
+const { getRuntimePlatform } = require('./base');
+const constants = require('./constant').getConstant('BaseToolConstant');
+if (getRuntimePlatform() === constants.NODE) {
+    nativePath = require('path');
     fs = require('fs');
+}
 
 function convertPathWithinCustomRootDir(rootDir, path) {
     return nativePath.resolve(rootDir, path);
