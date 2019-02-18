@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.2"></a>
+## [1.11.2](https://github.com/x956606865/incpad/compare/v1.11.1...v1.11.2) (2019-02-18)
+
+
+### Bug Fixes
+
+* **base-tool:** fix bug that crash on RN-Android ([e55c777](https://github.com/x956606865/incpad/commit/e55c777))
+
+
+
 <a name="1.11.1"></a>
 ## [1.11.1](https://github.com/x956606865/incpad/compare/v1.11.0...v1.11.1) (2019-02-13)
 
