@@ -1,11 +1,11 @@
 {
   "name": "@incpad/data-tool",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "main": "index.js",
   "license": "MIT",
   "scripts": {},
   "dependencies": {
-    "@incpad/base-tool": "^1.0.25"
+    "@incpad/base-tool": "^1.0.26"
   },
   "publishConfig": {
     "access": "public"
